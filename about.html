@@ -95,18 +95,6 @@
     .team-role { font-size: 0.82rem; color: var(--lightgrey); opacity: 0.7; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; margin-top: 0.3rem; }
     .team-bio { font-size: 0.88rem; line-height: 1.6; color: var(--lightgrey); opacity: 0.75; margin-top: 0.8rem; }
 
-    /* TIMELINE */
-    #timeline { padding: 6rem 3rem; background: var(--white); }
-    .timeline-inner { max-width: 750px; margin: 0 auto; }
-    .timeline { margin-top: 3rem; position: relative; }
-    .timeline::before { content: ''; position: absolute; left: 28px; top: 0; bottom: 0; width: 3px; background: var(--lightgrey); }
-    .tl-item { display: flex; gap: 1.5rem; margin-bottom: 2.5rem; position: relative; }
-    .tl-dot { width: 58px; height: 58px; border-radius: 50%; background: var(--navy); border: 3px solid var(--sky); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-family: 'Bebas Neue', sans-serif; font-size: 1rem; color: var(--sky); z-index: 2; }
-    .tl-content { padding-top: 0.6rem; }
-    .tl-year { font-size: 0.75rem; font-weight: 800; letter-spacing: 0.15em; text-transform: uppercase; color: var(--steelblue); margin-bottom: 0.3rem; }
-    .tl-title { font-family: 'Bebas Neue', sans-serif; font-size: 1.3rem; color: var(--navy); margin-bottom: 0.4rem; }
-    .tl-desc { font-size: 0.9rem; line-height: 1.65; color: var(--steelblue); }
-
     /* CTA */
     .page-cta { background: var(--sky); padding: 5rem 3rem; text-align: center; }
     .page-cta h2 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(2rem, 4vw, 3rem); color: var(--navy); margin-bottom: 0.8rem; }
@@ -136,7 +124,7 @@
       .nav-links a { height: auto; line-height: 1; padding: 0.9rem 2rem; border-bottom: 1px solid rgba(185,217,235,0.08) !important; }
       .nav-cta { margin: 0.5rem 2rem; }
       .hamburger { display: flex; }
-      .page-hero, #story, #values, #team, #timeline, .page-cta, footer { padding-left: 1.5rem; padding-right: 1.5rem; }
+      .page-hero, #story, #values, #team, .page-cta, footer { padding-left: 1.5rem; padding-right: 1.5rem; }
       .values-grid { grid-template-columns: 1fr; }
       .footer-grid { grid-template-columns: 1fr; }
     }
@@ -287,56 +275,6 @@
         <div class="team-name">Jordan Lee</div>
         <div class="team-role">Community Organizer</div>
         <p class="team-bio">The person who calls 200 volunteers by name. Jordan is the heartbeat of every cleanup event we run.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- TIMELINE -->
-<section id="timeline">
-  <div class="timeline-inner">
-    <p class="section-label">Our Journey</p>
-    <h2 class="section-title">How We Got Here</h2>
-    <div class="timeline">
-      <div class="tl-item">
-        <div class="tl-dot">2019</div>
-        <div class="tl-content">
-          <p class="tl-year">Year One</p>
-          <h3 class="tl-title">One Park. One Bag. One Idea.</h3>
-          <p class="tl-desc">Our founder picks up litter at a local park and shares it online. 40 strangers show up the next weekend. The League is born.</p>
-        </div>
-      </div>
-      <div class="tl-item">
-        <div class="tl-dot">2020</div>
-        <div class="tl-content">
-          <p class="tl-year">Official Incorporation</p>
-          <h3 class="tl-title">Officially a Nonprofit 501(c)(3)</h3>
-          <p class="tl-desc">The Litter League is officially incorporated and receives nonprofit status. We launch our first youth school program.</p>
-        </div>
-      </div>
-      <div class="tl-item">
-        <div class="tl-dot">2021</div>
-        <div class="tl-content">
-          <p class="tl-year">Expansion</p>
-          <h3 class="tl-title">Growing Across the City</h3>
-          <p class="tl-desc">We expand to 15 neighbourhoods, launch our litter data mapping initiative, and onboard our first corporate sponsors.</p>
-        </div>
-      </div>
-      <div class="tl-item">
-        <div class="tl-dot">2023</div>
-        <div class="tl-content">
-          <p class="tl-year">Policy Win</p>
-          <h3 class="tl-title">First Legislative Victory</h3>
-          <p class="tl-desc">Our advocacy work helps pass a local ordinance requiring extended producer responsibility for single-use plastics.</p>
-        </div>
-      </div>
-      <div class="tl-item">
-        <div class="tl-dot">2025</div>
-        <div class="tl-content">
-          <p class="tl-year">Today</p>
-          <h3 class="tl-title">4,200+ Volunteers Strong</h3>
-          <p class="tl-desc">We've removed over 185,000 lbs of litter across 48 neighbourhoods and counting. And we're just getting started.</p>
-        </div>
       </div>
     </div>
   </div>

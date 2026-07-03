@@ -109,7 +109,7 @@
     .subscribe-inner { max-width: 1100px; margin: 0 auto; text-align: center; }
     .subscribe-heading { font-family: 'Bebas Neue', sans-serif; font-size: clamp(2.2rem, 5vw, 3.5rem); color: var(--navy); margin-bottom: 0.8rem; }
     .subscribe-sub { color: var(--steelblue); font-size: 1rem; line-height: 1.65; font-weight: 600; margin: 0 auto 3rem; max-width: 560px; }
-    .subscribe-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; text-align: left; }
+    .subscribe-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; text-align: left; }
     .subscribe-card { border-radius: 1.5rem; padding: 2.5rem; }
     .subscribe-card--global { background: var(--navy); }
     .subscribe-card--local { background: var(--sky); }
@@ -120,6 +120,9 @@
     .subscribe-card-desc { font-size: 0.95rem; line-height: 1.72; margin-bottom: 1.8rem; }
     .subscribe-card--global .subscribe-card-desc { color: var(--lightgrey); }
     .subscribe-card--local .subscribe-card-desc { color: var(--steelblue); }
+    .subscribe-card--social { background: var(--sky); }
+    .subscribe-card--social .subscribe-card-title { color: var(--navy); }
+    .subscribe-card--social .subscribe-card-desc { color: var(--steelblue); }
     .substack-wrap { background: white; border-radius: 0.9rem; overflow: hidden; }
 
     /* FOOTER */
@@ -183,20 +186,31 @@
     <p class="subscribe-sub">Whether you're a student, artist, educator, or passionate community member — we value diverse skillsets and can't wait to learn what you bring to the table.</p>
     <div class="subscribe-grid">
 
-      <!-- Newsletter -->
-      <div class="subscribe-card subscribe-card--global">
-        <div class="subscribe-card-icon" style="display:flex; align-items:center; gap:0.5rem;"><span>🌍</span><span style="font-size:0.8rem; font-weight:800; letter-spacing:0.1em; text-transform:uppercase; color:var(--lightgrey);">Global</span></div>
-        <h3 class="subscribe-card-title">Subscribe to Our Newsletter</h3>
-        <p class="subscribe-card-desc">Stay connected to the science. We publish research updates, field reports, and lessons learned — openly and widely, just as we believe science should be shared. A great way to stay informed and share knowledge in your own community.</p>
-        <a href="https://litterleague.substack.com/about" target="_blank" rel="noopener" style="display:inline-block; margin-top:0.5rem; background:var(--sky); color:var(--navy); padding:0.8rem 1.8rem; border-radius:3rem; font-weight:800; font-size:0.95rem; text-decoration:none; transition:opacity 0.2s;">Subscribe on Substack →</a>
-      </div>
-
       <!-- Volunteer -->
       <div class="subscribe-card subscribe-card--local">
         <div class="subscribe-card-icon" style="display:flex; align-items:center; gap:0.5rem;"><span>📍</span><span style="font-size:0.8rem; font-weight:800; letter-spacing:0.1em; text-transform:uppercase; color:var(--steelblue);">New York City</span></div>
         <h3 class="subscribe-card-title">Volunteer with Us</h3>
-        <p class="subscribe-card-desc">Join us and contribute directly to real environmental research and outreach. Volunteers gain hands-on experience in data collection, science communication, and community engagement — and become part of a network of people cleaning up their community.</p>
+        <p class="subscribe-card-desc">Join us and contribute directly to environmental research and outreach. We are a new organization so this is a great chance to shape our future and gain leadership experience. Volunteers will gain experience in areas of their interest and contribute to our growing organization.</p>
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSdOUnr8oVsWzWCh8mdWXS3odKIp-fHZQRMXTqaZgfyPo6LHvw/viewform?usp=publish-editor" target="_blank" rel="noopener" style="display:inline-block; margin-top:0.5rem; background:var(--navy); color:var(--sky); padding:0.8rem 1.8rem; border-radius:3rem; font-weight:800; font-size:0.95rem; text-decoration:none; transition:opacity 0.2s;">Get in Touch →</a>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="subscribe-card subscribe-card--global">
+        <div class="subscribe-card-icon" style="display:flex; align-items:center; gap:0.5rem;"><span>🌍</span><span style="font-size:0.8rem; font-weight:800; letter-spacing:0.1em; text-transform:uppercase; color:var(--lightgrey);">Global</span></div>
+        <h3 class="subscribe-card-title">Subscribe to Our Newsletter</h3>
+        <p class="subscribe-card-desc">Stay connected. We plan to publish research updates, student experiences, and lessons learned.</p>
+        <a href="https://litterleague.substack.com/about" target="_blank" rel="noopener" style="display:inline-block; margin-top:0.5rem; background:var(--sky); color:var(--navy); padding:0.8rem 1.8rem; border-radius:3rem; font-weight:800; font-size:0.95rem; text-decoration:none; transition:opacity 0.2s;">Subscribe on Substack →</a>
+      </div>
+
+      <!-- Let's Socialize -->
+      <div class="subscribe-card subscribe-card--social">
+        <div class="subscribe-card-icon" style="display:flex; align-items:center; gap:0.5rem;"><span>📸</span><span style="font-size:0.8rem; font-weight:800; letter-spacing:0.1em; text-transform:uppercase; color:var(--steelblue);">Follow Along</span></div>
+        <h3 class="subscribe-card-title">Let's Socialize</h3>
+        <p class="subscribe-card-desc">Coming soon on social media — we have an Instagram <strong style="color:var(--navy);">@LitterLeagueNYC</strong> and a LinkedIn page. Updates and photographs to come as our first events kick off.</p>
+        <div style="display:flex; gap:0.6rem; flex-wrap:wrap; margin-top:0.5rem;">
+          <a href="https://www.instagram.com/litterleaguenyc" target="_blank" rel="noopener" style="display:inline-block; background:var(--navy); color:var(--sky); padding:0.8rem 1.4rem; border-radius:3rem; font-weight:800; font-size:0.9rem; text-decoration:none; transition:opacity 0.2s;">📸 Instagram</a>
+          <a href="https://www.linkedin.com/company/litter-league-nyc" target="_blank" rel="noopener" style="display:inline-block; background:var(--navy); color:var(--sky); padding:0.8rem 1.4rem; border-radius:3rem; font-weight:800; font-size:0.9rem; text-decoration:none; transition:opacity 0.2s;">💼 LinkedIn</a>
+        </div>
       </div>
 
     </div>
@@ -207,7 +221,7 @@
 <section id="ways">
   <div class="ways-inner">
     <p class="section-label">How to Help</p>
-    <h2 class="section-title">Our Activities</h2>
+    <h2 class="section-title">Upcoming Activities</h2>
     <div class="goal-cards-grid">
 
       <div class="goal-card">
@@ -249,7 +263,7 @@
       <div class="goal-card goal-card--wand">
         <div class="goal-card-icon">🪄</div>
         <h3 class="goal-card-title">Got Another Idea?</h3>
-        <p class="goal-card-body">Think there's a way to contribute that we haven't thought of yet? We're all ears. Reach out and let's figure out how your skills fit into the League.</p>
+        <p class="goal-card-body">Think there's a way to contribute that we haven't thought of yet? We're all ears. Reach out and let's figure out how your skills fit into the Litter League.</p>
       </div>
 
     </div>
@@ -264,15 +278,15 @@
     <div class="events-grid">
       <div class="event-card">
         <div class="event-date"><div class="event-month">Sep</div><div class="event-day">19</div></div>
-        <div class="event-info"><div class="event-name">International Coastal Cleanup Day / Urban Litter Challenge</div><div class="event-loc">📍 NYC — Location TBD</div><span class="event-badge">Cleanup</span></div>
+        <div class="event-info"><div class="event-name">International Coastal Cleanup Day / Urban Litter Challenge</div><div class="event-loc">📍 NYC — Location TBD</div></div>
       </div>
       <div class="event-card">
         <div class="event-date" style="min-width: 58px; background: var(--sky); color: var(--navy); border-radius: 0.8rem; padding: 0.7rem 1rem; text-align: center; flex-shrink: 0;"><div class="event-month">Date</div><div class="event-day" style="font-size: 1.2rem; line-height: 1.4;">TBD</div></div>
-        <div class="event-info"><div class="event-name">Home Waste Audit</div><div class="event-loc">🌍 Global</div><span class="event-badge">Community</span></div>
+        <div class="event-info"><div class="event-name">Home Waste Audit</div><div class="event-loc">🌍 Global</div></div>
       </div>
       <div class="event-card">
         <div class="event-date"><div class="event-month">Apr</div><div class="event-day">22</div></div>
-        <div class="event-info"><div class="event-name">Earth Day Cleanup 2027</div><div class="event-loc">📍 NYC — Location TBD</div><span class="event-badge">Cleanup</span></div>
+        <div class="event-info"><div class="event-name">Earth Day Cleanup 2027</div><div class="event-loc">📍 NYC — Location TBD</div></div>
       </div>
     </div>
   </div>
@@ -291,14 +305,12 @@
   </div>
   <div class="footer-grid">
     <div>
-      <img src="Zoie logo - Horizontal.png" alt="Litter League" style="height: 50px; width: auto; background: white; border-radius: 8px; padding: 4px 12px; display: block; margin-bottom: 0.9rem;">
-      <p class="footer-tagline">Science-based, community powered.</p>
-    </div>
+      <img src="Zoie logo - Horizontal.png" alt="Litter League" style="height: 50px; width: auto; background: white; border-radius: 8px; padding: 4px 12px; display: block; margin-bottom: 0.9rem;">    </div>
     <div class="footer-col"><h4>Organization</h4><ul><li><a href="about.html">About Us</a></li><li><a href="about.html#team">Our Team</a></li><li><a href="about.html#story">Our Mission</a></li></ul></div>
     <div class="footer-col"><h4>Get Involved</h4><ul><li><a href="get-involved.html">Volunteer</a></li><li><a href="get-involved.html#events">Events Calendar</a></li><li><a href="get-involved.html#signup">Newsletter</a></li></ul></div>
     <div class="footer-col"><h4>Support</h4><ul><li><a href="donate.html">Donate</a></li><li><a href="mailto:litterleaguenyc@gmail.com">Contact Us</a></li></ul></div>
   </div>
-  <div class="footer-bottom"><span>© 2025 Litter League. All rights reserved.</span><span>Privacy Policy · Terms of Use</span></div>
+  <div class="footer-bottom"><span>© 2026 Litter League. All rights reserved.</span><span>Privacy Policy · Terms of Use</span></div>
 </footer>
 
 <script>
